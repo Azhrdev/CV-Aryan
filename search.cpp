@@ -4,11 +4,11 @@
 
 int binary_search(const std::vector<int>& arr, int target) {
 
-    int low = arr.size() - 1;
+    int low = 0;
 
-    int high = 0;
+    int high = arr.size() - 1;
 
-    while (low < high) {
+    while (low <= high) {
 
         int mid = low + (high - low) / 2;  // Avoids potential overflow
 
